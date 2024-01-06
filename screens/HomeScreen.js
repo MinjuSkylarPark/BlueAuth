@@ -26,8 +26,7 @@ const HomeScreen = () => {
     //   <Text>HomeScreen</Text>
     // </View>
     <View style={styles.container}>
-      {/* current user? 치는 이유는 자바스크립트가 유저를 찾을 때 까지 이메일 뱅뱅돌리
-      면서 유저 어딨어 ㅜㅜ 할테니 유저없어도 괜찮다 없는대로 본 이메일로 돌아와~ 하는 것 */}
+      {/* current user? 치는 이유는 유저없어도 괜찮다 없는대로 본 이메일로 돌아와~ 하는 것 */}
       <Text>Email:{auth.currentUser?.email}</Text>
       <TouchableOpacity style={styles.button} onPress={handleSignOut}>
         <Text styles={styles.buttonText}>Sign out</Text>
